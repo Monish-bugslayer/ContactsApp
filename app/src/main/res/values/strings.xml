@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_contacts">WELCOME TO CONTACTS</string>
+    <string name="expand_your_contacts">Expand Your Contacts</string>
+    <string name="save_contact">SAVE CONTACT</string>
+    <string name="company_name">Company</string>
+    <string name="title">Title</string>
+    <string name="name_suffix">Name suffix</string>
+    <string name="family_name">Family name</string>
+    <string name="middle_name">Middle name</string>
+    <string name="given_name">Given name</string>
+    <string name="name_prefix">Name prefix</string>
+    <string name="check_what_else_there">Check what else there</string>
+    <string name="number">Number</string>
+    <string name="company">Company</string>
+    <string name="set_image_of_the_person">set image of the person</string>
+    <string-array name="saving_details">
+        <item>Save to Google Account</item>
+        <item>Save to Mobile Internal Storage</item>
+        <item>Save to External Storage</item>
+    </string-array>
+
+    <string-array name="number_suggestion">
+        <item>Mobile</item>
+        <item>Work</item>
+        <item>Home</item>
+        <item>Main</item>
+        <item>Work fax</item>
+        <item>Home fax</item>
+        <item>Pager</item>
+        <item>Other</item>
+        <item>Main</item>
+        <item>Work fax</item>
+    </string-array>
+</resources>

@@ -1,0 +1,18 @@
+Permission are two types:
+runtime invokes a permission during runtime
+install time permission gets access to a permission while installing the app
+    normal permission level
+    signature permission level
+
+special permission :A special permission guards access to system resources
+that are particularly sensitive or not directly related to user privacy.
+
+exmaple of special permission
+Scheduling exact alarms.
+Displaying and drawing over other apps.
+Accessing all storage data.
+
+why we use permissions
+Control: The user has control over the data that they share with apps.
+Transparency: The user understands what data an app uses and why the app accesses this data.
+Data minimization: An app accesses and uses only the data that's required for a specific task or action that the user invokes.

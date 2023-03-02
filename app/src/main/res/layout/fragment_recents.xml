@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Recents">
+
+    <ImageButton
+        android:id="@+id/go_to_recents_from_recents"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="148dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_access_time_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <ImageButton
+        android:id="@+id/go_to_all_contacts_from_recents"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_people_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recents"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="268dp"
+        android:layout_height="261dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519"
+        app:lottie_rawRes="@raw/recents"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="0.5">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

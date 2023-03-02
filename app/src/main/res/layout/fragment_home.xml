@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="369dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:lottie_speed="0.25"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/contacts_book"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold|italic"
+        android:text="@string/welcome_to_contacts"
+        android:fontFamily="@font/long_fox">
+    </TextView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="-60dp"
+        app:lottie_speed="0.5"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/hii">
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <Button
+        android:id="@+id/expand_your_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/expand_your_contacts"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#0A40E4"
+        android:textStyle="bold|italic"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+
+    </Button>
+
+
+</LinearLayout>

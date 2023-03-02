@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".AddContacts">
+
+    <Spinner
+        android:id="@+id/save_account_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/save_contact"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/add_contact_image_view"
+        android:layout_width="84dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/baseline_person_24"
+        android:contentDescription="@string/set_image_of_the_person">
+    </ImageView>
+
+    <LinearLayout
+
+        android:layout_width="392dp"
+        android:layout_height="393dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:contentPadding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageButton
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="330dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_corner"
+                android:contentDescription="@string/check_what_else_there"
+                android:src="@drawable/baseline_arrow_drop_down_24" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_text1"
+                    android:layout_width="326dp"
+                    android:layout_height="56dp"
+                    android:autofillHints=""
+                    android:hint="@string/name_prefix"
+                    android:inputType="text">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edit_text2"
+                    android:layout_width="326dp"
+                    android:layout_height="56dp"
+                    android:autofillHints=""
+                    android:hint="@string/given_name"
+                    android:inputType="text"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_text3"
+                    android:layout_width="326dp"
+                    android:layout_height="56dp"
+                    android:autofillHints=""
+                    android:hint="@string/middle_name"
+                    android:inputType="text"
+                    android:visibility="gone">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edit_text4"
+                    android:layout_width="326dp"
+                    android:layout_height="56dp"
+                    android:autofillHints=""
+                    android:hint="@string/family_name"
+                    android:inputType="text"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_text5"
+                    android:layout_width="326dp"
+                    android:layout_height="56dp"
+                    android:autofillHints=""
+                    android:hint="@string/name_suffix"
+                    android:inputType="text"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:inputType="text"
+            android:hint="@string/company_name"
+            android:id="@+id/company_name"/>
+
+        <EditText
+            android:id="@+id/title_name"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:inputType="text"
+            android:hint="@string/title" />
+
+        <Spinner
+            android:id="@+id/number_suggestion_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="-58dp"
+            android:hint="@string/number"
+            android:inputType="text"
+            android:id="@+id/number_type"
+            tools:ignore="TextFields"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/save_contact"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+
+    </Button>
+
+
+</LinearLayout>
